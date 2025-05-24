@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1232.0" prefWidth="2048.0" style="-fx-background-color: white;" stylesheets="@Css.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dead.MainScene">
+   <children>
+      <ImageView fitHeight="1391.0" fitWidth="1994.0" layoutY="-129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/icon.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="20.6" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="761.0" fitWidth="767.0" layoutX="-2.0" layoutY="638.0" onMouseClicked="#imageClicked" pickOnBounds="true" preserveRatio="true" rotate="275.0">
+         <image>
+            <Image url="@icons/lineImage.png" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="826.0" fitWidth="754.0" layoutX="1342.0" layoutY="661.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@icons/lineImage.png" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="591.0" layoutY="203.0" prefHeight="993.0" prefWidth="856.0" styleClass="main-suggestions" stylesheets="@Css.css" AnchorPane.leftAnchor="591.0" AnchorPane.rightAnchor="649.0">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="310.0" prefHeight="190.0" prefWidth="788.0">
+               <styleClass>
+                  <String fx:value="main-suggestions" />
+                  <String fx:value="scroll-pane" />
+               </styleClass>
+               <children>
+                  <ScrollPane fx:id="universityScrollPane" layoutX="7.0" layoutY="7.0" prefHeight="174.0" prefWidth="771.0" vbarPolicy="NEVER">
+                     <content>
+                        <GridPane fx:id="universityGridPane" prefHeight="176.0" prefWidth="769.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="scroll-pane-background" />
+                              <String fx:value="chat-color" />
+                           </styleClass>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="553.0" prefHeight="190.0" prefWidth="788.0">
+               <styleClass>
+                  <String fx:value="main-suggestions" />
+                  <String fx:value="scroll-pane" />
+               </styleClass>
+               <children>
+                  <ScrollPane fx:id="workspaceScrollPane" layoutX="7.0" layoutY="8.0" prefHeight="174.0" prefWidth="771.0" vbarPolicy="NEVER">
+                     <content>
+                        <GridPane fx:id="wokspaceGridPane" prefHeight="176.0" prefWidth="769.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="scroll-pane-background" />
+                              <String fx:value="chat-color" />
+                           </styleClass>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="788.0" prefHeight="190.0" prefWidth="788.0">
+               <styleClass>
+                  <String fx:value="main-suggestions" />
+                  <String fx:value="scroll-pane" />
+               </styleClass>
+               <children>
+                  <ScrollPane fx:id="fieldScrollPane" layoutX="8.0" layoutY="8.0" prefHeight="174.0" prefWidth="771.0" vbarPolicy="NEVER">
+                     <content>
+                        <GridPane fx:id="fieldGridPane" prefHeight="176.0" prefWidth="769.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="scroll-pane-background" />
+                              <String fx:value="chat-color" />
+                           </styleClass>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <Text layoutX="378.0" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="345.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workspace">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="7.0" layoutY="66.0" prefHeight="190.0" prefWidth="788.0">
+               <styleClass>
+                  <String fx:value="main-suggestions" />
+                  <String fx:value="scroll-pane" />
+               </styleClass>
+               <children>
+                  <ScrollPane fx:id="generalScrollPane" layoutX="7.0" layoutY="8.0" prefHeight="174.0" prefWidth="771.0" vbarPolicy="NEVER">
+                     <content>
+                        <GridPane fx:id="generalGridPane" prefHeight="176.0" prefWidth="769.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="scroll-pane-background" />
+                              <String fx:value="chat-color" />
+                           </styleClass>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <Text layoutX="345.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="349.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General">
+               <font>
+                  <Font name="Book Antiqua Bold" size="26.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="80.6" layoutY="56.0" prefHeight="185.0" prefWidth="475.0" styleClass="profile-container" stylesheets="@Css.css" AnchorPane.leftAnchor="80.6" AnchorPane.rightAnchor="1536.1999999999998" AnchorPane.topAnchor="56.0">
+         <children>
+            <ImageView fx:id="userImage" fitHeight="140.0" fitWidth="140.0" layoutX="21.0" layoutY="23.0" onMouseClicked="#userImageClicked" pickOnBounds="true" preserveRatio="true" styleClass="image-border" />
+            <AnchorPane layoutX="184.0" layoutY="23.0" prefHeight="140.0" prefWidth="195.0" styleClass="profile-container">
+               <children>
+                  <Text fx:id="usernameText" layoutX="9.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="218.94113159179688">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.22128655016422272" green="0.07719298452138901" blue="0.34736841917037964" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fx:id="universityNameText" layoutX="8.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of University" wrappingWidth="218.94113159179688">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.22128655016422272" green="0.07719298452138901" blue="0.34736841917037964" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fx:id="fieldNameText" layoutX="8.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field" wrappingWidth="208.5411682128905">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.22128655016422272" green="0.07719298452138901" blue="0.34736841917037964" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="80.6" layoutY="280.0" prefHeight="658.0" prefWidth="440.0" AnchorPane.leftAnchor="80.6" AnchorPane.rightAnchor="1533.7999999999997">
+         <children>
+            <ScrollPane fx:id="chatScrollPane" hbarPolicy="NEVER" layoutX="10.0" layoutY="8.0" prefHeight="640.0" prefWidth="413.0">
+               <content>
+                  <GridPane fx:id="chatGridPane" prefHeight="638.0" prefWidth="414.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="scroll-pane-background" />
+                        <String fx:value="chat-color" />
+                     </styleClass>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+         <styleClass>
+            <String fx:value="main-suggestions" />
+            <String fx:value="scroll-pane" />
+         </styleClass></AnchorPane>
+      <AnchorPane layoutX="1480.0" layoutY="203.0" prefHeight="692.0" prefWidth="495.0" styleClass="main-suggestions" AnchorPane.leftAnchor="1491.0" AnchorPane.topAnchor="203.0">
+         <children>
+            <Text layoutX="185.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Influencers">
+               <font>
+                  <Font name="Book Antiqua Bold" size="26.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="15.0" layoutY="72.0" prefHeight="606.0" prefWidth="465.0" styleClass="profile-container">
+               <children>
+                  <GridPane fx:id="influencersGridPane" alignment="CENTER" prefHeight="598.0" prefWidth="455.0" style="-fx-background-radius: 25 25 25 25;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="searchBox" alignment="CENTER" focusTraversable="false" layoutX="591.0" layoutY="66.0" onMouseClicked="#searchBoxClicked" prefHeight="104.0" prefWidth="856.0" promptText="Search" styleClass="search-field" stylesheets="@Css.css">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </TextField>
+      <AnchorPane fx:id="arrangeAnchorPane" layoutX="1501.0" layoutY="67.0" prefHeight="103.0" prefWidth="495.0" styleClass="search-field">
+         <children>
+            <Button layoutX="373.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#searchButtonClicked" prefHeight="54.0" prefWidth="95.0" text="Search">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="choice-box" />
+               </styleClass>
+               <effect>
+                  <DropShadow height="37.38" radius="18.19" spread="0.34" width="37.38">
+                     <color>
+                        <Color red="0.64463871717453" green="0.43037036061286926" blue="0.8736842274665833" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Text layoutX="17.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="86.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workspace">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="170.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="221.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialities">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="291.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connections">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="uniArrange" focusTraversable="false" layoutX="20.0" layoutY="35.0" prefHeight="50.0" prefWidth="50.0" promptText="1" styleClass="choice-box">
+               <font>
+                  <Font name="Book Antiqua Bold" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="workArrange" focusTraversable="false" layoutX="92.0" layoutY="35.0" prefHeight="50.0" prefWidth="50.0" promptText="1" styleClass="choice-box">
+               <font>
+                  <Font name="Book Antiqua Bold" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fieldArrange" focusTraversable="false" layoutX="158.0" layoutY="35.0" prefHeight="50.0" prefWidth="50.0" promptText="1" styleClass="choice-box">
+               <font>
+                  <Font name="Book Antiqua Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="specsArrange" focusTraversable="false" layoutX="227.0" layoutY="35.0" prefHeight="50.0" prefWidth="50.0" promptText="1" styleClass="choice-box">
+               <font>
+                  <Font name="Book Antiqua Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="concsArrange" focusTraversable="false" layoutX="300.0" layoutY="35.0" prefHeight="50.0" prefWidth="50.0" promptText="1" styleClass="choice-box">
+               <font>
+                  <Font name="Book Antiqua Bold" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="searchGridPane" layoutX="589.0" layoutY="175.0" prefHeight="534.0" prefWidth="856.0" styleClass="code-text-field" stylesheets="@Css.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

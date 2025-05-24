@@ -1,0 +1,111 @@
+.text-pane {
+    -fx-background-color: #F4F7FEFF;
+    -fx-border-width: 0 0 0 2;
+    -fx-border-color: rgba(92, 86, 140, 0.48);
+}
+
+.input-field {
+    -fx-border-width: 2;
+    -fx-background-color: #F4F7FEFF;
+    -fx-background-radius: 35;
+    -fx-border-color: rgba(86, 64, 182, 0.57);
+    -fx-border-radius: 32;
+}
+
+.date-picker {
+    -fx-border-width: 2;
+    -fx-background-color: #F4F7FEFF;
+}
+
+.button {
+    -fx-border-width: 2;
+    -fx-background-color: #F4F7FEFF;
+    -fx-background-radius: 45;
+}
+
+.first-anchor {
+    -fx-background-color: rgba(100, 88, 205, 0.35);
+}
+
+.second-anchor {
+    -fx-background-color: rgba(119, 156, 224, 0.35);
+}
+
+.curve-anchor {
+    -fx-background-radius: 5;
+    -fx-background-color: rgba(92, 86, 140, 0.48);
+}
+
+.confirmation-anchor {
+    -fx-background-radius: 45;
+    -fx-background-color: rgba(92, 86, 140, .72);
+}
+
+.code-text-field {
+    -fx-background-color: #F4F7FEFF;
+    -fx-border-width: 3px;
+    -fx-border-color: rgba(120, 86, 140, 0.48);
+    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+}
+
+.return.button:hover {
+    -fx-background-color: rgba(248, 233, 255, 0.48);
+    -fx-border-width: 5;
+    border-color: rgba(182, 196, 245, 0.48);
+    -fx-border-radius: 42;
+    -fx-background-radius: 45;
+}
+
+.code-text-field:hover {
+    -fx-background-color: #e9eaff;
+}
+
+.search-field {
+    -fx-background-color: #f9fbff;
+    -fx-border-width: 3px;
+    -fx-border-color: rgba(115, 104, 199, 0.48);
+    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+}
+
+.main-suggestions {
+    -fx-background-color: rgba(244, 247, 254, 0.7);
+    -fx-border-width: 3px;
+    -fx-border-color: rgba(92, 86, 140, 0.48);
+    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+}
+
+.profile-container {
+    -fx-background-color: #f9fbff;
+    -fx-border-width: 3px;
+    -fx-border-color: rgba(115, 104, 199, 0.48);
+    -fx-border-radius: 8;
+    -fx-background-radius: 12;
+}
+
+.profile-image {
+    -fx-background-radius: 50;
+    -fx-clip-shape: circle;
+}
+
+.scroll-pane {
+    -fx-background-color: rgb(225, 223, 249, .50);
+}
+
+.chat-color {
+    -fx-background-color: #f3f7ff;
+}
+
+.grid-color {
+    -fx-background-color: #f3f7ff;
+    -fx-background-radius: 20;
+}
+
+.choice-box {
+    -fx-background-radius: 180;
+    -fx-border-width: 3;
+    -fx-border-color: rgba(115, 104, 199, 0.48);
+    -fx-border-radius: 175;
+}

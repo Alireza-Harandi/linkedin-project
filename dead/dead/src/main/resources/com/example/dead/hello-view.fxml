@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1232.0" maxWidth="2048.0" minHeight="1232.0" minWidth="2048.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dead.HelloController">
+   <children>
+      <AnchorPane layoutX="553.0" layoutY="325.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1024.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="591.0" layoutY="802.0" prefHeight="150.0" prefWidth="62.0" rotate="-40.2" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="424.0" layoutY="694.0" prefHeight="66.0" prefWidth="56.0" rotate="45.0" styleClass="second-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="555.0" layoutY="610.0" prefHeight="53.0" prefWidth="62.0" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="247.0" layoutY="330.0" prefHeight="109.0" prefWidth="89.0" rotate="-28.3" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="314.0" layoutY="495.0" prefHeight="206.0" prefWidth="28.0" rotate="45.0" styleClass="second-anchor" stylesheets="@Css.css" />
+            <Text fx:id="signUpLoginText" layoutX="384.8" layoutY="228.0" onMouseEntered="#signUpLoginTextEntered" onMouseExited="#signUpLoginTextExited" stroke="BLACK" strokeType="OUTSIDE" text="SignUp" wrappingWidth="268.8375244140625" AnchorPane.leftAnchor="384.8">
+               <font>
+                  <Font size="82.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.47766080498695374" green="0.45847952365875244" blue="0.8421052694320679" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.14146341463414636">
+                           <color>
+                              <Color red="0.50409334897995" green="0.20020000636577606" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.28344549125168245">
+                           <color>
+                              <Color red="0.48089998960494995" green="0.4620000123977661" blue="0.8399999737739563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.3634146341463415">
+                           <color>
+                              <Color red="0.50409334897995" green="0.20020000636577606" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5248202737747432">
+                           <color>
+                              <Color red="0.48089998960494995" green="0.4620000123977661" blue="0.8399999737739563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6097560975609756">
+                           <color>
+                              <Color red="0.50409334897995" green="0.20020000636577606" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8513212749893314">
+                           <color>
+                              <Color red="0.48089998960494995" green="0.4620000123977661" blue="0.8399999737739563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5096815824508667" green="0.2019493132829666" blue="0.7789473533630371" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </Text>
+            <TextField fx:id="usernameTextField" alignment="CENTER" focusTraversable="false" layoutX="259.0" layoutY="528.0" onMouseEntered="#usernameTextFieldEntered" onMouseExited="#usernameTextFieldExited" prefHeight="66.0" prefWidth="520.0" promptText="Username" styleClass="input-field" stylesheets="@Css.css" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="528.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow spread="0.28">
+                     <color>
+                        <Color red="0.4927699863910675" green="0.1530994176864624" blue="0.8105263113975525" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <PasswordField fx:id="passwordField" alignment="CENTER" focusTraversable="false" layoutX="259.0" layoutY="637.0" onMouseEntered="#passwordFieldEntered" onMouseExited="#passwordFieldExited" prefHeight="66.0" prefWidth="520.0" promptText="Password" styleClass="input-field" stylesheets="@Css.css" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="637.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow spread="0.28">
+                     <color>
+                        <Color red="0.4927699863910675" green="0.1530994176864624" blue="0.8105263113975525" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </PasswordField>
+            <TextField fx:id="eMailField" alignment="CENTER" focusTraversable="false" layoutX="259.0" layoutY="748.0" onMouseEntered="#eMailFieldEntered" onMouseExited="#eMailFieldExited" prefHeight="66.0" prefWidth="520.0" promptText="Email" styleClass="input-field" stylesheets="@Css.css" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="748.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow spread="0.28">
+                     <color>
+                        <Color red="0.4927699863910675" green="0.1530994176864624" blue="0.8105263113975525" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <DatePicker fx:id="birthDatePicker" focusTraversable="false" layoutX="832.0" layoutY="582.0" onMouseEntered="#forgetPasswordTextEntered" onMouseExited="#forgetPasswordTextExited" prefHeight="79.0" prefWidth="124.0" promptText="     Birth date" styleClass="date-picker" stylesheets="@Css.css" AnchorPane.topAnchor="582.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow spread="0.28">
+                     <color>
+                        <Color red="0.4927699863910675" green="0.1530994176864624" blue="0.8105263113975525" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </DatePicker>
+            <ImageView fitHeight="348.0" fitWidth="368.0" layoutX="-13.0" layoutY="896.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/downIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="261.0" fitWidth="303.0" layoutX="687.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/aboveIcon.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="113.0" layoutY="109.0" prefHeight="126.0" prefWidth="202.0" rotate="54.5" styleClass="second-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="800.0" layoutY="1089.0" prefHeight="140.0" prefWidth="82.0" rotate="-39.3" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="866.0" layoutY="1095.0" prefHeight="126.0" prefWidth="202.0" rotate="-39.3" styleClass="second-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="720.0" layoutY="954.0" prefHeight="139.0" prefWidth="56.0" styleClass="second-anchor" stylesheets="@Css.css" />
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="-198.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true" rotate="65.9">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="15.0" layoutY="86.0" prefHeight="140.0" prefWidth="149.0" rotate="45.0" styleClass="first-anchor" stylesheets="@Css.css" />
+            <TextField fx:id="nameTextField" alignment="CENTER" focusTraversable="false" layoutX="259.0" layoutY="417.0" onMouseEntered="#nameTextFieldEntered" onMouseExited="#nameTextFieldExited" prefHeight="66.0" prefWidth="520.0" promptText="Name" styleClass="input-field" stylesheets="@Css.css" AnchorPane.leftAnchor="259.0" AnchorPane.topAnchor="417.0">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow spread="0.28">
+                     <color>
+                        <Color red="0.4927699863910675" green="0.1530994176864624" blue="0.8105263113975525" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="611.0" layoutY="904.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="28.7">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="signUpLoginButton" layoutX="384.0" layoutY="927.0" mnemonicParsing="false" onMouseClicked="#signUpLoginButtonClicked" onMouseEntered="#signUpLoginButtonEntered" onMouseExited="#signUpLoginButtonExited" prefHeight="86.0" prefWidth="269.0" stylesheets="@Css.css" text="SignUp" textAlignment="CENTER" textFill="#6c3084">
+               <effect>
+                  <DropShadow spread="0.44">
+                     <color>
+                        <Color red="0.357723206281662" green="0.2881871461868286" blue="0.8842105269432068" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="forgetPasswordText" layoutX="281.0" layoutY="724.0" onMouseClicked="#forgetPasswordTextClicked" onMouseEntered="#forgetPasswordTextEntered" onMouseExited="#forgetPasswordTextExited" strokeType="OUTSIDE" strokeWidth="0.0" text="Did you forget your password?" wrappingWidth="227.6384309280079">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="goToSignInUp" layoutX="405.0" layoutY="1036.0" onMouseClicked="#goToSignInUpClicked" onMouseEntered="#goToSignInUpEntered" onMouseExited="#goToSignInUpExited" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? SignIn!" wrappingWidth="269.60000000000014">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="announceText" fill="RED" layoutX="405.0" layoutY="1058.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here info">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Circle fx:id="thirdBall" fill="WHITE" layoutX="742.0" layoutY="721.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="secondBall" fill="WHITE" layoutX="719.0" layoutY="721.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="firstBall" fill="WHITE" layoutX="696.0" layoutY="721.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="1205.0" layoutY="268.0" prefHeight="200.0" prefWidth="200.0" styleClass="text-pane" stylesheets="@Css.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1024.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="designIcon" fitHeight="701.0" fitWidth="1021.0" layoutX="8.0" layoutY="7.0" onMouseEntered="#designIconEntered" onMouseExited="#designIconExited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icon.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="50.0" layoutY="708.0" opacity="0.37" prefHeight="5.0" prefWidth="948.0" style="-fx-background-color: #3C259BFF;" />
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="450.0" layoutY="705.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="-8.0" layoutY="739.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="tierUpText" layoutX="359.0" layoutY="1014.0" onMouseEntered="#tierUpTextEntered" onMouseExited="#tierUpTextExited" stroke="BLACK" strokeType="OUTSIDE" styleClass="text-effect" text="TierUp">
+               <font>
+                  <Font name="Book Antiqua" size="96.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.03959229228900638">
+                           <color>
+                              <Color red="0.4014666676521301" green="0.31200000643730164" blue="0.800000011920929" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.20528181728654435">
+                           <color>
+                              <Color red="0.4090396463871002" green="0.18651072680950165" blue="0.5473684072494507" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.41234612480714294">
+                           <color>
+                              <Color red="0.33350488543510437" green="0.06760233640670776" blue="0.5368421077728271" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5798181400387354">
+                           <color>
+                              <Color red="0.40888887643814087" green="0.31111112236976624" blue="0.800000011920929" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7573613892262744">
+                           <color>
+                              <Color red="0.5502514839172363" green="0.10491228103637695" blue="0.7263157963752747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8297738239831925">
+                           <color>
+                              <Color red="0.37042105197906494" green="0.3308771848678589" blue="0.7263157963752747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8761776581426648">
+                           <color>
+                              <Color red="0.46313709020614624" green="0.1157115027308464" blue="0.5894736647605896" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.46313709020614624" green="0.1157115027308464" blue="0.5894736647605896" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </Text>
+            <AnchorPane layoutX="-35.0" layoutY="1226.0" prefHeight="66.0" prefWidth="70.0" rotate="45.0" styleClass="curve-anchor" stylesheets="@Css.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="989.0" layoutY="-45.0" prefHeight="66.0" prefWidth="70.0" rotate="45.0" styleClass="curve-anchor" stylesheets="@Css.css" />
+   </children>
+</AnchorPane>

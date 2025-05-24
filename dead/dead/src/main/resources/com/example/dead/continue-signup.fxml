@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1232.0" prefWidth="2048.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dead.ContinueSignup">
+   <children>
+      <ImageView fitHeight="1391.0" fitWidth="1994.0" layoutX="20.0" layoutY="-109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/icon.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="20.6" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="761.0" fitWidth="767.0" layoutX="18.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/lineImage.png" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="826.0" fitWidth="754.0" layoutX="1362.0" layoutY="681.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/lineImage.png" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="917.0" layoutY="67.0" prefHeight="1102.0" prefWidth="1080.0" styleClass="main-suggestions" stylesheets="@Css.css">
+         <children>
+            <AnchorPane fx:id="first" layoutX="95.0" layoutY="91.0" onMouseClicked="#firstClicked" prefHeight="251.0" prefWidth="390.0" stylesheets="@Css.css">
+               <styleClass>
+                  <String fx:value="curve-anchor" />
+                  <String fx:value="choice-box" />
+               </styleClass>
+               <children>
+                  <Text layoutX="56.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assistant Manager">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="second" layoutX="615.0" layoutY="85.0" onMouseClicked="#secondClicked" prefHeight="251.0" prefWidth="390.0" stylesheets="@Css.css">
+               <styleClass>
+                  <String fx:value="curve-anchor" />
+                  <String fx:value="choice-box" />
+               </styleClass>
+               <children>
+                  <Text layoutX="25.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chief Design Engineer">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="third" layoutX="98.0" layoutY="435.0" onMouseClicked="#thirdClicked" prefHeight="251.0" prefWidth="390.0" stylesheets="@Css.css">
+               <styleClass>
+                  <String fx:value="curve-anchor" />
+                  <String fx:value="choice-box" />
+               </styleClass>
+               <children>
+                  <Text layoutX="112.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistician">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="fourth" layoutX="614.0" layoutY="437.0" onMouseClicked="#fourthClicked" prefHeight="251.0" prefWidth="390.0" stylesheets="@Css.css">
+               <styleClass>
+                  <String fx:value="curve-anchor" />
+                  <String fx:value="choice-box" />
+               </styleClass>
+               <children>
+                  <Text layoutX="50.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Assistant">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="fifth" layoutX="347.0" layoutY="768.0" onMouseClicked="#fifthClicked" prefHeight="251.0" prefWidth="390.0" stylesheets="@Css.css">
+               <styleClass>
+                  <String fx:value="curve-anchor" />
+                  <String fx:value="choice-box" />
+               </styleClass>
+               <children>
+                  <Text layoutX="92.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Scientist">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="universityTextField" alignment="CENTER" focusTraversable="false" layoutX="207.0" layoutY="682.0" prefHeight="75.0" prefWidth="507.0" promptText="University" styleClass="input-field" stylesheets="@Css.css">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="0.5246133804321289" green="0.43118909001350403" blue="0.8315789699554443" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Book Antiqua" size="32.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fieldTextField" alignment="CENTER" focusTraversable="false" layoutX="210.0" layoutY="817.0" prefHeight="75.0" prefWidth="507.0" promptText="Field" styleClass="input-field" stylesheets="@Css.css">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="0.5246133804321289" green="0.43118909001350403" blue="0.8315789699554443" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Book Antiqua" size="32.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="workPlaceTextField" alignment="CENTER" focusTraversable="false" layoutX="211.0" layoutY="950.0" prefHeight="75.0" prefWidth="507.0" promptText="Workplace" styleClass="input-field" stylesheets="@Css.css">
+         <effect>
+            <DropShadow height="30.0" radius="14.5" spread="0.1" width="30.0">
+               <color>
+                  <Color red="0.5246133804321289" green="0.43118909001350403" blue="0.8315789699554443" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Book Antiqua" size="32.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="401.0" fitWidth="575.0" layoutX="205.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/aboveIcon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="358.0" layoutY="1106.0" mnemonicParsing="false" onMouseClicked="#continueButtonClicked" prefHeight="79.0" prefWidth="209.0" styleClass="choice-box" stylesheets="@Css.css" text="Continue">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.46034517884254456" green="0.41600000858306885" blue="0.800000011920929" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

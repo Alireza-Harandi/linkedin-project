@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="parentAnchorPane" maxHeight="1232.0" maxWidth="2048.0" minHeight="1232.0" minWidth="2048.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dead.VerificationCode">
+   <children>
+      <AnchorPane layoutX="553.0" layoutY="325.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1024.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="591.0" layoutY="802.0" prefHeight="150.0" prefWidth="62.0" rotate="-40.2" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="424.0" layoutY="694.0" prefHeight="66.0" prefWidth="56.0" rotate="45.0" styleClass="second-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="555.0" layoutY="610.0" prefHeight="53.0" prefWidth="62.0" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="247.0" layoutY="330.0" prefHeight="109.0" prefWidth="89.0" rotate="-28.3" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="314.0" layoutY="495.0" prefHeight="206.0" prefWidth="28.0" rotate="45.0" styleClass="second-anchor" stylesheets="@Css.css" />
+            <ImageView fitHeight="348.0" fitWidth="368.0" layoutX="-13.0" layoutY="896.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/downIcon.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="113.0" layoutY="109.0" prefHeight="126.0" prefWidth="202.0" rotate="54.5" styleClass="second-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="800.0" layoutY="1089.0" prefHeight="140.0" prefWidth="82.0" rotate="-39.3" styleClass="first-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="866.0" layoutY="1095.0" prefHeight="126.0" prefWidth="202.0" rotate="-39.3" styleClass="second-anchor" stylesheets="@Css.css" />
+            <AnchorPane layoutX="720.0" layoutY="954.0" prefHeight="139.0" prefWidth="56.0" styleClass="second-anchor" stylesheets="@Css.css" />
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="-99.0" layoutY="-78.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="-112.2">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="15.0" layoutY="86.0" prefHeight="140.0" prefWidth="149.0" rotate="45.0" styleClass="first-anchor" stylesheets="@Css.css" />
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="611.0" layoutY="904.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="28.7">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="confirmButton" layoutX="395.0" layoutY="754.0" mnemonicParsing="false" onMouseClicked="#confirmButtonClicked" onMouseEntered="#confirmButtonEntered" onMouseExited="#confirmButtonExited" prefHeight="86.0" prefWidth="269.0" stylesheets="@Css.css" text="Confirm" textAlignment="CENTER" textFill="#6c3084">
+               <effect>
+                  <DropShadow spread="0.44">
+                     <color>
+                        <Color red="0.357723206281662" green="0.2881871461868286" blue="0.8842105269432068" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="resendCode" layoutX="425.0" layoutY="868.0" onMouseClicked="#resendCodeClicked" onMouseEntered="#resendCodeEntered" onMouseExited="#resendCodeExited" strokeType="OUTSIDE" strokeWidth="0.0" text="Did'n get the code? Resend it!" wrappingWidth="212.00002441406264">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="receivedCodeText" layoutX="260.8" layoutY="241.0" onMouseEntered="#receivedCodeTextEntered" onMouseExited="#receivedCodeTextExited" stroke="BLACK" strokeType="OUTSIDE" text="Received Code" wrappingWidth="540.3332824826241" AnchorPane.leftAnchor="260.8">
+               <font>
+                  <Font size="82.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.47766080498695374" green="0.45847952365875244" blue="0.8421052694320679" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.14146341463414636">
+                           <color>
+                              <Color red="0.50409334897995" green="0.20020000636577606" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.28344549125168245">
+                           <color>
+                              <Color red="0.48089998960494995" green="0.4620000123977661" blue="0.8399999737739563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.3634146341463415">
+                           <color>
+                              <Color red="0.50409334897995" green="0.20020000636577606" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5248202737747432">
+                           <color>
+                              <Color red="0.48089998960494995" green="0.4620000123977661" blue="0.8399999737739563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6097560975609756">
+                           <color>
+                              <Color red="0.50409334897995" green="0.20020000636577606" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8513212749893314">
+                           <color>
+                              <Color red="0.48089998960494995" green="0.4620000123977661" blue="0.8399999737739563" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5096815824508667" green="0.2019493132829666" blue="0.7789473533630371" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </Text>
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="565.0" layoutY="-166.0" pickOnBounds="true" preserveRatio="true" rotate="105.6">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="184.0" layoutY="508.0" maxHeight="200.0" minHeight="200.0" prefHeight="200.0" prefWidth="728.0" styleClass="confirmation-anchor" stylesheets="@Css.css">
+               <children>
+                  <TextField fx:id="firstDigit" alignment="CENTER" layoutX="64.0" layoutY="60.0" prefHeight="82.0" prefWidth="84.0" styleClass="code-text-field" stylesheets="@Css.css" AnchorPane.bottomAnchor="57.60000000000002" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="secondDigit" alignment="CENTER" layoutX="168.0" layoutY="60.0" prefHeight="82.0" prefWidth="84.0" styleClass="code-text-field" stylesheets="@Css.css" AnchorPane.bottomAnchor="57.60000000000002" AnchorPane.leftAnchor="168.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="thirdDigit" alignment="CENTER" layoutX="272.0" layoutY="60.0" prefHeight="82.0" prefWidth="84.0" styleClass="code-text-field" stylesheets="@Css.css" AnchorPane.bottomAnchor="57.60000000000002" AnchorPane.leftAnchor="272.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="fourthDigit" alignment="CENTER" layoutX="376.0" layoutY="60.0" prefHeight="82.0" prefWidth="84.0" styleClass="code-text-field" stylesheets="@Css.css" AnchorPane.bottomAnchor="57.60000000000002" AnchorPane.leftAnchor="376.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="fifthDigit" alignment="CENTER" layoutX="480.0" layoutY="60.0" prefHeight="82.0" prefWidth="84.0" styleClass="code-text-field" stylesheets="@Css.css" AnchorPane.bottomAnchor="57.60000000000002" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="sixthDigit" alignment="CENTER" layoutX="584.0" layoutY="60.0" prefHeight="84.0" prefWidth="84.0" styleClass="code-text-field" stylesheets="@Css.css" AnchorPane.bottomAnchor="57.60000000000002" AnchorPane.leftAnchor="584.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <effect>
+                  <DropShadow height="42.06" radius="20.53" spread="0.81" width="42.06">
+                     <color>
+                        <Color red="0.7599308490753174" green="0.7006999850273132" blue="0.9100000262260437" opacity="0.5799999833106995" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Button layoutX="472.0" layoutY="1152.0" mnemonicParsing="false" onMouseClicked="#returnClicked" prefHeight="62.0" prefWidth="116.0" styleClass="return" stylesheets="@Css.css" text="Return" textFill="#535aa6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.29">
+                     <color>
+                        <Color red="0.4313725531101227" green="0.4588235318660736" blue="0.8274509906768799" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Text fx:id="announceText" fill="RED" layoutX="464.0" layoutY="732.0" onMouseClicked="#resendCodeClicked" onMouseEntered="#resendCodeEntered" onMouseExited="#resendCodeExited" strokeType="OUTSIDE" strokeWidth="0.0" text="The code is invalid" wrappingWidth="130.85083858598477">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1205.0" layoutY="268.0" prefHeight="200.0" prefWidth="200.0" styleClass="text-pane" stylesheets="@Css.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1024.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="designIcon" fitHeight="701.0" fitWidth="1021.0" layoutX="8.0" layoutY="7.0" onMouseEntered="#designIconEntered" onMouseExited="#designIconExited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icon.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="50.0" layoutY="708.0" opacity="0.37" prefHeight="5.0" prefWidth="948.0" style="-fx-background-color: #3C259BFF;" />
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="450.0" layoutY="705.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="558.0" fitWidth="675.0" layoutX="-8.0" layoutY="739.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+               <image>
+                  <Image url="@icons/lineImage.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="tierUpText" layoutX="359.0" layoutY="1014.0" onMouseEntered="#tierUpTextEntered" onMouseExited="#tierUpTextExited" stroke="BLACK" strokeType="OUTSIDE" styleClass="text-effect" text="TierUp">
+               <font>
+                  <Font name="Book Antiqua" size="96.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.03959229228900638">
+                           <color>
+                              <Color red="0.4014666676521301" green="0.31200000643730164" blue="0.800000011920929" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.20528181728654435">
+                           <color>
+                              <Color red="0.4090396463871002" green="0.18651072680950165" blue="0.5473684072494507" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.41234612480714294">
+                           <color>
+                              <Color red="0.33350488543510437" green="0.06760233640670776" blue="0.5368421077728271" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5798181400387354">
+                           <color>
+                              <Color red="0.40888887643814087" green="0.31111112236976624" blue="0.800000011920929" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7573613892262744">
+                           <color>
+                              <Color red="0.5502514839172363" green="0.10491228103637695" blue="0.7263157963752747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8297738239831925">
+                           <color>
+                              <Color red="0.37042105197906494" green="0.3308771848678589" blue="0.7263157963752747" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.8761776581426648">
+                           <color>
+                              <Color red="0.46313709020614624" green="0.1157115027308464" blue="0.5894736647605896" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.46313709020614624" green="0.1157115027308464" blue="0.5894736647605896" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </Text>
+            <AnchorPane layoutX="-35.0" layoutY="1226.0" prefHeight="66.0" prefWidth="70.0" rotate="45.0" styleClass="curve-anchor" stylesheets="@Css.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="989.0" layoutY="-45.0" prefHeight="66.0" prefWidth="70.0" rotate="45.0" styleClass="curve-anchor" stylesheets="@Css.css" />
+   </children>
+</AnchorPane>
